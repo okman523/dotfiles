@@ -1,5 +1,6 @@
 # Unix
 alias ll="ls -al"
+alias la="ls -a"
 alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
@@ -15,6 +16,9 @@ alias s="rspec"
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+#Proxy
+alias fly='export ALL_PROXY=http://127.0.0.1:7890'
+alias land='unset ALL_PROXY'
 # Include custom aliases
 if [[ -f ~/.aliases.local ]]; then
   source ~/.aliases.local
